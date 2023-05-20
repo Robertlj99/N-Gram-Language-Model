@@ -11,15 +11,13 @@ With text generation and perplexity computation.
 
 All data is contained in the content directory provided.
 The train, test, and valid data comes from the wikitext dataset.
-The two .pkl files are pickle files used to store and load the tokenized
-data and trained language model, you do not need those to start
-as the program will automatically make them for you if they are not there.
+Two files tokenized_data.pkl and trained_lm.pkl will be created at run time by the
+program and stored in the content directory as well. The two .pkl files are pickle 
+files and are used to store and load the tokenized data and trained language model.
 It is important to have the content directory located exactly as it is
 here if you wish to run this exactly as I have it, since the program automatically
 loads the .pkl files from content. Otherwise if you wish to load
 your own data you can specify the file path during command line interface.
-Two files tokenized_data.pkl and trained_lm.pkl will be created at run time by the
-program and stored in the content directory as well
 
 <h3>Files</h3>
 
