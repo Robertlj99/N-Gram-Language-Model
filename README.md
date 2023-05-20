@@ -2,7 +2,9 @@
 
 Python implementation of an N-Gram Language Model.
 With text generation and perplexity computation.
+
 <h3>Data</h3>
+
 - wiki.test.tokens
 - wiki.train.tokens
 - wiki.valid.tokens
@@ -20,6 +22,7 @@ loads the .pkl files from content. Otherwise if you wish to load
 your own data you can specify the file path during command line interface
 
 <h3>Files</h3>
+
 - load_data.py
 - main.py
 - ngram_lm.py
