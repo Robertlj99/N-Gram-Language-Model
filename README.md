@@ -8,8 +8,6 @@ With text generation and perplexity computation.
 - wiki.test.tokens
 - wiki.train.tokens
 - wiki.valid.tokens
-- tokenized_data.pkl
-- trained_lm.pkl
 
 All data is contained in the content directory provided.
 The train, test, and valid data comes from the wikitext dataset.
@@ -19,7 +17,9 @@ as the program will automatically make them for you if they are not there.
 It is important to have the content directory located exactly as it is
 here if you wish to run this exactly as I have it, since the program automatically
 loads the .pkl files from content. Otherwise if you wish to load
-your own data you can specify the file path during command line interface
+your own data you can specify the file path during command line interface.
+Two files tokenized_data.pkl and trained_lm.pkl will be created at run time by the
+program and stored in the content directory as well
 
 <h3>Files</h3>
 
