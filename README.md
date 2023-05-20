@@ -32,6 +32,7 @@ in the program it is being correctly called.
 <h3>How to use</h3>
 Firstly you should load the data you can do this by specifying the load argument in
 the command line like this
+
 ```commandline
 python main.py load [--file <fileset>]
 ```
@@ -41,6 +42,7 @@ which is 'content/wiki.{}.tokens'. This path will load each of the provided
 datasets provided in content. The expected output for following the default
 option is as follows, note the first ten words of vocab will change each time you run this
 command but otherwise everything should be the same.
+
 ```commandline
 Please enter fileset you wish to be loaded or leave empty for default 
 Using default wikitext fileset included in content directory
@@ -59,6 +61,7 @@ first 10 words in vocab: ['transfusions', 'threads', 'rework', 'visited', 'recen
 ```
 
 Next you should train a model with the following command
+
 ```commandline
 python main.py train [--order <#>]
 ```
@@ -66,6 +69,7 @@ You can specify the order of the model you wish to train with the optional comma
 or leave it as default which is order 3.
 
 The expected output is as follows if following the default options
+
 ```commandline
 Please enter the order of the model you would like to train or leave empty for default 
 Beginning training of language model of order  3
@@ -74,6 +78,7 @@ Finished training model in:  18.874913215637207  seconds
 Model saved to 'content/trained_lm.pkl'
 ```
 After this you can generate text to the command line like so
+
 ```commandline
 python main.py generate [--tokens <#>] [--context <string>]
 ```
@@ -81,6 +86,7 @@ Tokens is used to select how many tokens you wish to generate and context is use
 to specify what string you would like to use to prompt the model. Note that if you 
 enter a context it should not have parentheses around it. The following is an example
 without using any flags but specifying the number of tokens and context when prompted.
+
 ```commandline
 Please enter the number of tokens you wish to generate or leave empty for default 30
 Please enter the context you wish to generate from or leave empty for default: he is the
@@ -89,10 +95,12 @@ Generating  30  tokens following given context "he is the" with order:  3
 he is the number of people aware of the sensitive political climate of the late 19th century and continued into the early 1970s , he held coaching roles with the new zealand government set
 ```
 Lastly you can compute perplexity by entering the following
+
 ```commandline
 python main.py perplexity
 ```
 And if following the default the expected response is
+
 ```commandline
 Computing perplexity for language model of order  3 
 
