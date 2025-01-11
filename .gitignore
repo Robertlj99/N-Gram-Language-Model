@@ -1,2 +1,5 @@
 # Fleet files
 .fleet/
+
+# Compiled Pickle files
+content/*.pkl
